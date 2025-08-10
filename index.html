@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarun Sai Nyalakanti - Portfolio</title>
+    <style>
+        :root {
+            --primary-color: #3498db;
+            --secondary-color: #2c3e50;
+            --accent-color: #e74c3c;
+            --light-color: #ecf0f1;
+            --dark-color: #2c3e50;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+        
+        header {
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 0;
+        }
+        
+        h2, h3 {
+            margin-bottom: 1rem;
+            color: var(--secondary-color);
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        h2 {
+            font-size: 1.8rem;
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 0.5rem;
+            margin-top: 2rem;
+        }
+        
+        h3 {
+            font-size: 1.4rem;
+            color: var(--primary-color);
+        }
+        
+        .contact-info {
+            margin-bottom: 1.5rem;
+        }
+        
+        .contact-info a {
+            color: var(--light-color);
+            text-decoration: none;
+            margin: 0 0.5rem;
+        }
+        
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+        
+        .section {
+            background-color: white;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        
+        .skill-category {
+            flex: 1;
+            min-width: 250px;
+        }
+        
+        .skill-category h4 {
+            margin-bottom: 0.5rem;
+            color: var(--dark-color);
+        }
+        
+        ul {
+            list-style-position: inside;
+            margin-bottom: 1rem;
+        }
+        
+        .project, .experience {
+            margin-bottom: 2rem;
+        }
+        
+        .project h3, .experience h3 {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        
+        .project p, .experience p {
+            margin-top: 0.5rem;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            background-color: var(--secondary-color);
+            color: white;
+        }
+        
+        .achievement-item {
+            margin-bottom: 1rem;
+        }
+        
+        .achievement-item strong {
+            color: var(--accent-color);
+        }
+        
+.header-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-text {
+    flex-flow: column;
+}
+
+.profile-picture {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border: 3px solid var(--light-color);
+    margin-left: 1rem;
+}
+
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    
+    .profile-picture {
+        margin: 0 auto 1rem;
+    }
+}
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            h2 {
+                font-size: 1.5rem;
+            }
+            
+            .skills {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+            <div class="header-text">
+                <h1>Tarun Sai Nyalakanti</h1>
+                <div class="contact-info">
+                    Vijayawada, NTR District, Andhra Pradesh, 520001, India<br>
+                    +91-7997900593 | 
+                    <a href="mailto:nyalakantitarunsai@gmail.com">nyalakantitarunsai@gmail.com</a> | 
+                    <a href="https://www.linkedin.com/in/tarun-sai-nyalakanti/" id="linkedin">LinkedIn</a> | 
+                    <a href="https://github.com/N-TarunSai" id="github">GitHub</a>
+                </div>
+            </div>
+            <img src="./images/Tarun_Sai.jpg" alt="Tarun Sai Nyalakanti" class="profile-picture">
+        </div>
+        </div>
+    </header>
+    
+    <main class="container">
+        <section class="section" id="summary">
+            <h2>Summary</h2>
+            <p>Computer Science graduate skilled in Java, Python, SQL, and Full-stack development. Proficient in Machine learning, Deep learning, and AI-driven automation, with experience handling large datasets for predictive analysis. Hands-on backend development using Java (Spring Boot), including debugging, testing, and modular optimization. Developed responsive frontend interfaces using HTML, CSS, and JavaScript for various standalone web development projects. Worked under senior developers in fast-paced, time-bound environments, demonstrating ownership, adaptability, and strong communication.</p>
+        </section>
+        
+        <section class="section" id="skills">
+            <h2>Technical Skills</h2>
+            <div class="skills">
+                <div class="skill-category">
+                    <h4>Programming Languages:</h4>
+                    <ul>
+                        <li>Java</li>
+                        <li>MySQL</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h4>Tools & Technologies:</h4>
+                    <ul>
+                        <li>TensorFlow</li>
+                        <li>PowerBI</li>
+                        <li>Jaspersoft Studio</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h4>Certifications:</h4>
+                    <ul>
+                        <li>AWS Cloud Practitioner</li>
+                        <li>Ethnus MERN Full Stack</li>
+                        <li>IBM Design Thinking</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <section class="section" id="education">
+            <h2>Education</h2>
+            <h3>B.Tech in Computer Science and Engineering</h3>
+            <ul>
+                <li><strong>B.Tech</strong> - Vellore Institute of Technology – Amaravati, Andhra Pradesh</li>
+                <li><strong>Intermediate, MPC</strong> - Sarada Junior College – Vijayawada, Andhra Pradesh</li>
+                <li><strong>High School</strong> - Sri Chaitanya Techno School – Vijayawada, Andhra Pradesh</li>
+            </ul>
+        </section>
+        
+        <section class="section" id="achievements">
+            <h2>Achievements</h2>
+            <div class="achievement-item">
+                <p><strong>Aug 2021 – May 2025</strong> - CGPA: 8.75</p>
+                <p><strong>May 2019 – May 2021</strong> - Percentage: 91.8%</p>
+                <p><strong>Apr 2018 – Apr 2019</strong> - CGPA: 10.0</p>
+            </div>
+            <div class="achievement-item">
+                <p><strong>1st Prize</strong> - Best Paper Award at the 7th International Symposium, MIT ADT University Pune, for research on <strong>Seizure Classification using Capsule Network and Bi-LSTM Hybrid</strong> (Mar 2025).</p>
+            </div>
+            <div class="achievement-item">
+                <p><strong>Runner-up at Hash Breaker 2.0</strong>, a National 24-hour hackathon by Center of Excellence and NGC Club, VIT-AP (Feb 2023).</p>
+            </div>
+        </section>
+        
+        <section class="section" id="experience">
+            <h2>Experience</h2>
+            <div class="experience">
+                <h3>Software Development Project, <em>Vetan Application</em></h3>
+                <ul>
+                    <li>Enhanced Spring Boot app by integrating Jasper Reports and implementing payroll month logic, optimizing modularity with structured controllers and grids for better debugging.</li>
+                    <li>Gained hands-on experience with MySQL and JSON queries for efficient data retrieval.</li>
+                    <li>Implemented role-based access control (RBAC) to restrict HR data visibility.</li>
+                    <li>Successfully added support for .jrxl files, enabling multi-format report downloads (CSV, PDF).</li>
+                    <li>Possess frontend expertise for UI improvements.</li>
+                    <li>Currently working on report archiving and enhancing screening functionality.</li>
+                </ul>
+            </div>
+        </section>
+        
+        <section class="section" id="projects">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Web-Based Bird Species Classification using Deep Learning</h3>
+                <p>Building a real-time bird species classification website powered by the InceptionV3 model, which achieved 91.05% accuracy across 525 species. Currently working on integrating live prediction functionality.</p>
+            </div>
+            <div class="project">
+                <h3>Seizure Classification using Capsule Network and Bi-LSTM Hybrid on Synthetic Dataset</h3>
+                <p>Developed a hybrid deep learning model combining Capsule Networks and Bi-LSTM, achieving 98.66% accuracy in classifying EEG signals into seizure types using a self-created dataset, enhancing neurological disorder diagnosis.</p>
+            </div>
+            <div class="project">
+                <h3>Bank Customer Churn Prediction using SVM</h3>
+                <p>Achieved 93% accuracy in churn prediction through data preprocessing and hyperparameter tuning.</p>
+            </div>
+            <div class="project">
+                <h3>Lymphography Classification</h3>
+                <p>Developed a high accuracy lymphography classification model, enhancing diagnostics through advanced ML, data preprocessing, and model optimization.</p>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Tarun Sai Nyalakanti. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById('linkedin').addEventListener('click', function(e) {
+            e.preventDefault();
+            alert('LinkedIn profile link would go here');
+        });
+        document.getElementById('github').addEventListener('click', function(e) {
+            e.preventDefault();
+            alert('GitHub profile link would go here');
+        });
+    </script>
+</body>
+</html>
